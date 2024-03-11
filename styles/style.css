@@ -1,0 +1,72 @@
+/* CSS untuk styling halaman web */
+body {
+    font-family: 'Roboto', sans-serif; /* Font family untuk teks */
+    margin: 0; /* Menghapus margin */
+    padding: 0; /* Menghapus padding */
+    background-color: #f9f9f9; /* Warna latar belakang */
+}
+
+/* Container untuk menengahkan card di tengah layar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #656565, #363636); /* Gradasi warna latar belakang container */
+}
+
+/* Styling untuk card */
+.card {
+    background: linear-gradient(to bottom right, #656565, #363636); /* Gradasi warna background card */
+    border-radius: 10px; /* Membuat sudut card menjadi melengkung */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow untuk efek 3D */
+    padding: 30px; /* Padding di dalam card */
+    max-width: 500px; /* Lebar maksimum card */
+    text-align: center; /* Teks yang di-align di tengah card */
+    color: #fff; /* Warna teks */
+    transform: translateZ(0); /* Mencegah rendering bug di beberapa browser */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi saat hover */
+}
+
+/* Efek saat card dihover */
+.card:hover {
+    transform: translateZ(10px); /* Efek 3D saat hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Shadow lebih besar saat hover */
+}
+
+/* Styling untuk gambar di dalam card */
+.card img {
+    width: 100%; /* Gambar mengisi lebar card */
+    border-radius: 10px; /* Sudut gambar melengkung sesuai card */
+    margin-bottom: 20px; /* Jarak antara gambar dan teks */
+}
+
+/* Styling untuk judul di dalam card */
+.card h1 {
+    font-size: 28px; /* Ukuran font judul */
+    margin-bottom: 15px; /* Jarak antara judul dan paragraf */
+    color: #ffffff; /* Warna teks */
+}
+
+/* Styling untuk paragraf di dalam card */
+.card p {
+    font-size: 18px; /* Ukuran font paragraf */
+    line-height: 1.6; /* Tinggi baris */
+}
+
+/* Styling untuk tautan di dalam card */
+.card a {
+    display: inline-block; /* Tautan ditampilkan sebagai blok */
+    padding: 10px 20px; /* Padding untuk tautan */
+    margin-top: 20px; /* Jarak antara tautan dengan elemen di atasnya */
+    background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang tautan */
+    color: #fff; /* Warna teks tautan */
+    text-decoration: none; /* Menghapus dekorasi tautan */
+    border-radius: 5px; /* Sudut melengkung pada tautan */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang saat hover */
+}
+
+/* Efek saat tautan dihover */
+.card a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang tautan saat hover */
+}
